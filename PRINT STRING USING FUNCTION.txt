@@ -1,0 +1,5 @@
+def str():
+   X='HELLO'
+   return(X)
+y='world'
+print(str()+" "+y)
