@@ -1,0 +1,5 @@
+def naturalnumbers(n):
+    return (n * (n + 1)) // 2
+n = 10
+result = naturalnumbers(n)
+print("Sum of N natural numbers",result)
