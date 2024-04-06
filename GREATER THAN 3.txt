@@ -1,0 +1,13 @@
+a=int(input("Enter value of X:"))
+b=int(input("Enter value of Y:"))
+c=int(input("Enter value of Z:"))
+if(a>b):
+    if(a>c):
+        print("A is greater.")
+    else:
+        print("C is greater.")
+else:
+      if(b>c):
+        print("B is greater.")
+      else:
+            print("C is greater.")
