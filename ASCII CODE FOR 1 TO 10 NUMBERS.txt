@@ -1,0 +1,2 @@
+for i in range(10):
+    print(f"The ASCII value of {i} is: {ord(str(i))}")
