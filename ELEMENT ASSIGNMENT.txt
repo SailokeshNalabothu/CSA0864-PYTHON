@@ -1,0 +1,3 @@
+#types of errors in strings
+a='PYTHON'
+a[0]='x'

@@ -1,0 +1,20 @@
+a="good morning"
+print(a.capitalize())
+print(a.upper())
+print(a.title())
+print(a.swapcase())
+print(a.split())
+print(a.count("good"))
+print(a.replace("very","morning"))
+b='happy'
+a='-'
+a.join(b)
+print(a.join(b))
+
+
+
+
+
+
+
+

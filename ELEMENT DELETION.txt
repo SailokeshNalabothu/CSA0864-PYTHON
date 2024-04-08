@@ -1,0 +1,6 @@
+#types of errors in deletion of strings
+a='python'
+del a[0]
+
+a='python'
+del a
