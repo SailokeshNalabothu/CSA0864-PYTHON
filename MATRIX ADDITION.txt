@@ -1,0 +1,21 @@
+#matrix addition in 3*3 
+x = [[1, 25, 35],[4, 57, 6], [7, 82, 9]]
+y = [[1,2,3],[6,56,96],[3, 25, 11]]
+z = [[0, 0, 0], [0, 0, 0], [0, 0, 0]]
+for i in range(len(x)):
+    for j in range(len(x[0])):
+        z[i][j] = x[i][j] + y[i][j]
+for z in z:
+    print(z)
+
+
+#matrix addition in 2*2
+
+x = [[1, 25], [4, 57]]
+y = [[1, 2], [6, 56]]
+z = [[0, 0], [0, 0]]
+for i in range(len(x)):
+    for j in range(len(x[0])):
+        z[i][j] = x[i][j] + y[i][j]
+for row in z:
+    print(row)

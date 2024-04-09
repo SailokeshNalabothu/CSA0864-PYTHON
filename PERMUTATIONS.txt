@@ -1,0 +1,11 @@
+def permutations(arr, n):
+    if n == 0:
+        print(arr)
+    else:
+        for i in range(n):
+            arr[i], arr[n-1] = arr[n-1], arr[i]
+            permutations(arr, n-1)
+            arr[i], arr[n-1] = arr[n-1], arr[i]
+
+elements = [1, 2, 3]
+permutations(elements, len(elements))

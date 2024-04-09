@@ -1,0 +1,16 @@
+row = int(input("Enter No Of Rows: "))
+column = int(input("Enter No Of Columns: "))
+matrix = []
+
+print("Enter Elements Row-wise:")
+for  r in range(row):
+    a = []
+    for c in range(column):
+        a.append(int(input()))
+    matrix.append(a)
+
+print("Matrix:")
+for r in range(row):
+    for c in range(column):
+        print(matrix[r][c], end=" ")
+    print()
