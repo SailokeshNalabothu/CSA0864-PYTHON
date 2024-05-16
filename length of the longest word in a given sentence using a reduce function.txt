@@ -1,0 +1,4 @@
+from functools import reduce
+s = "hi user"
+res = reduce(lambda x, y: max(x, len(y)), s.split(), 0)
+print(res)

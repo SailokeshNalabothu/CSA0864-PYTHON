@@ -1,0 +1,10 @@
+def sqrt(num):
+    x = num
+    while True:
+        root = 0.5 * (x + num / x)
+        if abs(root - x) < 1:
+            return root
+        x = root
+number =4
+result = sqrt(number)
+print("The square root of:",result)

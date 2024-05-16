@@ -1,0 +1,3 @@
+s = "hi user gdfg bdfg xfvdfg fgdgs"
+w = max(set(s.split()), key = s.split().count)
+print("The most frequent word is:",w)

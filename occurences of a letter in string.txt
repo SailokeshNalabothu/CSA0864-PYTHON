@@ -1,0 +1,6 @@
+def occ(string, char):
+    return string.count(char)
+str = "hello, world!"
+c= "l"
+occu = occ(str, c)
+print(occu)

@@ -1,0 +1,5 @@
+def count(string):
+    return len(s.split())
+s = "Hello, world! This is a test string."
+word_count = count(s)
+print("Number of words in the string:", word_count)
