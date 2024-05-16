@@ -1,0 +1,6 @@
+import math
+def lcm(x, y):
+    return abs(x * y) // math.gcd(x, y)
+num1 = 54
+num2 = 24
+print(lcm(num1, num2))

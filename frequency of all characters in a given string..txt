@@ -1,0 +1,13 @@
+def fre(string):
+    frequency = {}
+    for char in string:
+        if char in frequency:
+            frequency[char] += 1
+        else:
+            frequency[char] = 1
+    return frequency
+input = "hello world"
+result = fre(input)
+print("Character frequency in the string:")
+for key, value in result.items():
+    print(f"{key}: {value}")

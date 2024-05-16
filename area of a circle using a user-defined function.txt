@@ -1,0 +1,5 @@
+def circle_area(radius):
+    return 3.14159 * radius ** 2
+radius = 5
+area = circle_area(radius)
+print(f"The area of the circle is: {area}")

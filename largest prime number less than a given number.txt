@@ -1,0 +1,9 @@
+def prime(num):
+    return all(num % i != 0 for i in range(2, int(num ** 0.5) + 1))
+def largest(num):
+    for n in range(num - 1, 1, -1):
+        if prime(n):
+            return n
+number = 50
+a = largest(number)
+print(a)

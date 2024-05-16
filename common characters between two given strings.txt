@@ -1,0 +1,6 @@
+def common(str1, str2):
+    return list(set(str1) & set(str2))
+string1 = "hello"
+string2 = "world"
+res = common(string1, string2)
+print(res)

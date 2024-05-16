@@ -1,0 +1,4 @@
+c = lambda x: x.title()
+s = "hello world"
+os = c(s)
+print(os)

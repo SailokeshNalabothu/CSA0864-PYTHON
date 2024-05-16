@@ -1,0 +1,6 @@
+def substring(mainstring, substring):
+    return mainstring.find(substring)
+mainstr = "Hello, World!"
+substr = "World"
+index = substring(mainstr, substr)
+print(index)

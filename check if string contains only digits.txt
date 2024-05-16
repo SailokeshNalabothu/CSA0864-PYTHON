@@ -1,0 +1,7 @@
+def c(s):
+    return s.isdigit()
+s = "123w45"
+if c(s):
+    print(" contains only digits.")
+else:
+    print("does not contain only digits.")

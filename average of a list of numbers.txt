@@ -1,0 +1,4 @@
+average = lambda numbers: sum(numbers) / len(numbers)
+numbers = [5, 15, 25, 35, 45]
+ave = average(numbers)
+print(ave)
