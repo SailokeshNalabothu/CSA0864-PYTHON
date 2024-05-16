@@ -1,0 +1,10 @@
+import re  
+def valid(email):  
+    if re.match(r"[^@]+@[^@]+\.[^@]+", email):  
+        return True  
+    return False  
+email = "example@domain.com"  
+if valid(email):  
+    print("Valid email address")  
+else:  
+    print("Invalid email address")

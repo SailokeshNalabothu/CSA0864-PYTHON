@@ -1,0 +1,8 @@
+def sum(a, b):
+    if b == 0:
+        return a
+    else:
+        return sum(a ^ b, (a & b) << 1)
+num1 = 5
+num2 = 3
+print(sum(num1, num2))
