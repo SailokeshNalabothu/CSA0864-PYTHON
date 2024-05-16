@@ -1,0 +1,43 @@
+from collections import defaultdict
+
+def findItinerary(tickets):
+    graph = defaultdict(list)
+    for frm, to in tickets:
+        graph[frm].append(to)
+    
+    for key in graph:
+        graph[key].sort(reverse=True)  # Sort destinations in descending order
+    
+    route = []
+    def dfs(node):
+        while graph[node]:
+            dfs(graph[node].pop())
+        route.append(node)
+    
+    dfs("JFK")
+    return route[::-1]
+
+
+tickets = [["MUC", "LHR"], ["JFK", "MUC"], ["SFO", "SJC"], ["LHR", "SFO"]]
+itinerary = findItinerary(tickets)0.
+print(itinerary)
+
+
+
+
+Your `findItinerary` function seems to implement an algorithm to find the itinerary of a trip using the given list of tickets. It constructs a graph where the keys are the departure airports and the values are lists of arrival airports. Then, it performs a depth-first search (DFS) starting from "JFK" (John F. Kennedy International Airport), visiting each airport based on the order of tickets and adding them to the route.
+
+Here's a breakdown of the function:
+
+1. Initialize a defaultdict named `graph` to store the adjacency list representation of the graph. The keys are departure airports, and the values are lists of arrival airports.
+2. Iterate through the list of tickets. For each ticket, add the arrival airport to the list associated with the departure airport in the graph.
+3. Sort the destinations in descending order for each departure airport. This is done to ensure that when popping destinations during DFS, we explore them in lexicographically increasing order.
+4. Define a DFS function named `dfs`. It takes a node (airport) as input.
+   - While there are destinations remaining for the current node in the graph, pop one destination at a time and recursively call `dfs` on it.
+   - After exploring all destinations from the current node, add the node to the `route`.
+5. Start DFS from "JFK" (John F. Kennedy International Airport).
+6. Return the reversed `route` since DFS adds airports in reverse order.
+
+Your example usage demonstrates finding the itinerary using a list of tickets. The expected output would be the itinerary that starts from "JFK" and follows the order of the provided tickets.
+
+Your implementation looks correct for finding the itinerary based on the given list of tickets.

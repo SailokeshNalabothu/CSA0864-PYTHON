@@ -1,0 +1,3 @@
+string="hey user"
+rm= ''.join(string.split())
+print(rm)

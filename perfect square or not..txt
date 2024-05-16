@@ -1,0 +1,7 @@
+def perfectsquare(num):
+    return num >= 0 and (int(num ** 0.5) ** 2 == num)
+number = 25
+if perfectsquare(number):
+    print(" perfect square.")
+else:
+    print(" not a perfect square.")

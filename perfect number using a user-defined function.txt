@@ -1,0 +1,8 @@
+def perfect(num):
+    sumd= sum([i for i in range(1, num) if num % i == 0])
+    return sumd == num
+number = 25
+if perfect(number):
+    print(" a perfect number.")
+else:
+    print(" not a perfect number.")
