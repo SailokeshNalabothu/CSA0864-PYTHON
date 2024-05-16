@@ -1,0 +1,42 @@
+def isPathCrossed(distance):
+    x = y = 0
+    visited = set([(x, y)])
+    directions = [(0, 1), (-1, 0), (0, -1), (1, 0)]
+    direction = 0
+
+    for d in distance:
+        for _ in range(d):
+            x += directions[direction][0]
+            y += directions[direction][1]
+            if (x, y) in visited:
+                return True
+            visited.add((x, y))
+        
+        direction = (direction + 1) % 4
+
+    return False
+
+# Test the function
+distance = [2, 1, 1, 2]
+print(isPathCrossed(distance))  # Output: False
+
+
+
+
+Your `isPathCrossed` function seems to be checking whether a path crosses itself. It works by moving along the path defined by a sequence of distances in four directions (up, left, down, right) and checking if the current position has been visited before.
+
+Let's break down the function:
+
+1. Initialize variables: `x` and `y` represent the current position, `visited` is a set to store visited positions, `directions` holds the four possible directions, and `direction` keeps track of the current direction.
+
+2. Iterate over the distances provided. For each distance:
+   a. Move in the current direction for the specified distance.
+   b. Check if the current position has been visited before. If so, return `True`, indicating that the path has crossed itself.
+   c. Add the current position to the visited set.
+   d. Update the direction to the next one in the sequence.
+
+3. If the loop completes without finding any crossing, return `False`.
+
+Your test case `[2, 1, 1, 2]` specifies a path that goes 2 units up, 1 unit left, 1 unit down, and finally 2 units right, forming a loop without crossing itself. Therefore, the expected output is `False`, indicating that the path does not cross itself.
+
+Your function looks correct!

@@ -1,0 +1,7 @@
+def replace(string, oldword, newword):
+    return string.replace(oldword, newword)
+str = "Hello, World! Hello, Python!"
+oldword = "Hello"
+newword = "Hi"
+result = replace(str, oldword, newword)
+print(result)

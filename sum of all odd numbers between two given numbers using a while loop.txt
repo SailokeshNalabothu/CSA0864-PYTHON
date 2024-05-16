@@ -1,0 +1,8 @@
+num1 = 10
+num2 = 15
+sum_odd = 0
+num = num1 if num1 % 2 != 0 else num1 + 1
+while num <= num2:
+    sum_odd += num
+    num += 2
+print(sum_odd)
